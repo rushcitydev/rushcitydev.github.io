@@ -161,14 +161,6 @@ body {
   to { text-shadow: 0 0 30px var(--gold), 0 0 60px var(--primary), 0 0 80px var(--secondary); }
 }
 
-.subtitle {
-  display: block;
-  font-size: 32px;
-  color: var(--primary);
-  margin-top: 10px;
-  font-weight: 700;
-}
-
 .hero-desc {
   font-size: 18px;
   color: var(--text-dim);
@@ -196,18 +188,6 @@ body {
   transition: all 0.3s;
   border: 2px solid;
   cursor: pointer;
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
-  color: white;
-  border-color: var(--gold);
-  box-shadow: 0 5px 20px rgba(255, 100, 0, 0.4);
-}
-
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 30px rgba(255, 100, 0, 0.6);
 }
 
 .btn-secondary {
@@ -307,92 +287,6 @@ section {
 .feature-card p {
   color: var(--text-dim);
   font-size: 14px;
-}
-
-/* Gallery */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-
-.gallery-item {
-  aspect-ratio: 16/9;
-  background: linear-gradient(135deg, rgba(40, 20, 10, 0.8), rgba(20, 10, 5, 0.8));
-  border: 2px solid var(--primary);
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-
-.gallery-item:hover {
-  border-color: var(--gold);
-  transform: scale(1.03);
-}
-
-.gallery-placeholder {
-  color: var(--text-dim);
-  font-size: 18px;
-}
-
-/* Download */
-.download {
-  background: var(--dark-2);
-}
-
-.download-card {
-  max-width: 500px;
-  margin: 0 auto;
-  background: linear-gradient(135deg, rgba(40, 20, 10, 0.9), rgba(20, 10, 5, 0.9));
-  border: 3px solid var(--gold);
-  border-radius: 25px;
-  padding: 40px;
-  text-align: center;
-  box-shadow: 0 15px 50px rgba(255, 100, 0, 0.3);
-}
-
-.download-icon {
-  font-size: 64px;
-  margin-bottom: 20px;
-}
-
-.download-card h3 {
-  font-size: 28px;
-  color: var(--gold);
-  margin-bottom: 10px;
-}
-
-.download-card p {
-  color: var(--text-dim);
-  margin-bottom: 20px;
-}
-
-.download-info {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 25px;
-  flex-wrap: wrap;
-  font-size: 14px;
-  color: var(--text-dim);
-}
-
-.btn-download {
-  background: linear-gradient(135deg, #008B00, #005a00);
-  color: white;
-  border-color: #00FF00;
-  width: 100%;
-  font-size: 18px;
-  display: block;
-  text-align: center;
-}
-
-.btn-download:hover {
-  box-shadow: 0 8px 30px rgba(0, 255, 0, 0.4);
-  transform: translateY(-3px);
 }
 
 /* Contact */
@@ -516,10 +410,6 @@ section {
     font-size: 42px;
   }
   
-  .subtitle {
-    font-size: 24px;
-  }
-  
   .section-title {
     font-size: 32px;
   }
@@ -554,8 +444,6 @@ section {
     <ul class="nav-links" id="navLinks">
       <li><a href="#home">خانه</a></li>
       <li><a href="#features">امکانات</a></li>
-      <li><a href="#gallery">گالری</a></li>
-      <li><a href="#download">دانلود</a></li>
       <li><a href="#contact">تماس</a></li>
     </ul>
     <div class="menu-btn" onclick="toggleMenu()">☰</div>
@@ -569,14 +457,13 @@ section {
     <div class="hero-badge">🔥 نسخه ۱.۰ منتشر شد!</div>
     <h1 class="hero-title">
       <span class="glow-text">RUSH CITY</span>
-      <span class="subtitle">هجوم شهر</span>
+      <span class="subtitle">راش سیتی</span>
     </h1>
     <p class="hero-desc">
       یه بازی RPG حماسی تو دنیای باز.
       شغل‌های مختلف بگیر، به شهرت خدمت کن، و قهرمان شو!
     </p>
     <div class="hero-buttons">
-      <a href="#download" class="btn btn-primary">📥 دانلود بازی</a>
       <a href="https://rubika.ir/rushcity" target="_blank" class="btn btn-secondary">📱 کانال روبیکا</a>
     </div>
     <div class="hero-stats">
@@ -635,47 +522,6 @@ section {
   </div>
 </section>
 
-<!-- Gallery -->
-<section id="gallery" class="gallery">
-  <div class="container">
-    <h2 class="section-title">📸 گالری تصاویر</h2>
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <div class="gallery-placeholder">🎮 اسکرین‌شات ۱</div>
-      </div>
-      <div class="gallery-item">
-        <div class="gallery-placeholder">🎮 اسکرین‌شات ۲</div>
-      </div>
-      <div class="gallery-item">
-        <div class="gallery-placeholder">🎮 اسکرین‌شات ۳</div>
-      </div>
-      <div class="gallery-item">
-        <div class="gallery-placeholder">🎮 اسکرین‌شات ۴</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Download -->
-<section id="download" class="download">
-  <div class="container">
-    <h2 class="section-title">📥 دانلود بازی</h2>
-    <div class="download-card">
-      <div class="download-icon">🎮</div>
-      <h3>Rush City v1.0</h3>
-      <p>دانلود رایگان از مایکت</p>
-      <div class="download-info">
-        <span>📦 حجم: ~10 MB</span>
-        <span>📱 اندروید 5.0+</span>
-        <span>⭐ ۵.۰</span>
-      </div>
-      <a href="https://myket.ir" target="_blank" class="btn btn-download">
-        📥 دانلود از مایکت
-      </a>
-    </div>
-  </div>
-</section>
-
 <!-- Contact -->
 <section id="contact" class="contact">
   <div class="container">
@@ -685,11 +531,6 @@ section {
         <div class="contact-icon">📱</div>
         <h3>کانال روبیکا</h3>
         <p>@rushcity</p>
-      </a>
-      <a href="https://rushcitydev.github.io" target="_blank" class="contact-card">
-        <div class="contact-icon">🌐</div>
-        <h3>وب‌سایت</h3>
-        <p>rushcitydev.github.io</p>
       </a>
       <a href="mailto:hoseinheidari1029@gmail.com" class="contact-card">
         <div class="contact-icon">📧</div>
@@ -713,7 +554,7 @@ section {
         <ul>
           <li><a href="#home">خانه</a></li>
           <li><a href="#features">امکانات</a></li>
-          <li><a href="#download">دانلود</a></li>
+          <li><a href="#contact">تماس</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -725,7 +566,7 @@ section {
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Rush City. ساخته شده با ❤️ توسط IR Android Studio</p>
+      <p>© 2026 راش سیتی - تمامی حقوق محفوظ است</p>
     </div>
   </div>
 </footer>
@@ -775,12 +616,12 @@ var observer = new IntersectionObserver(function(entries) {
   entries.forEach(function(entry) {
     if(entry.isIntersecting) {
       entry.target.style.opacity = '1';
-      entry.target.style.transform = 'translateY(0)';
+      entry.style.transform = 'translateY(0)';
     }
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('.feature-card, .gallery-item, .contact-card').forEach(function(el) {
+document.querySelectorAll('.feature-card, .contact-card').forEach(function(el) {
   el.style.opacity = '0';
   el.style.transform = 'translateY(30px)';
   el.style.transition = 'all 0.6s ease';
@@ -789,4 +630,4 @@ document.querySelectorAll('.feature-card, .gallery-item, .contact-card').forEach
 </script>
 
 </body>
-</html>
+  </html>
